@@ -1,55 +1,66 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 html {
   font-size: 1em;
+  font-family: serif;
 }
 
-main {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#bg-image {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  color: #fff;
-  text-align: center;
   background-image: url('../image/IMG_20200209_195455.jpg');
   background-size: cover;
 }
 
-#main-upper {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  width: 80%;
-  height: 30%;
+main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-#main-upper h1 {
-  font-size: 5rem;
-}
-
-#main-upper p {
-  font-size: 2rem;
-}
-
-#stand-by {
+#welcome {
+  display: none;
   position: absolute;
-  bottom: 10vh;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 0.2rem 1rem;
-  border-radius: 0.5rem;
+  bottom: 50%;
+  width: 100%;
+  color: #fff;
 }
 
-#main-lower {
+#welcome h1 {
+  font-size: 5.5rem;
+}
+
+#welcome p {
+  font-size: 1.8rem;
+}
+
+#q-wrapper {
+  position: absolute;
+  top: 100%;
   width: 80%;
-  height: 0;  /* to 40% */
-  border: solid rgba(255, 255, 255, 0);  /* to #fff */
+  height: 1000vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  margin: 0 10vw 10vh 10vw;
+}
+
+.fa-chevron-down {
+  position: relative;
+  font-size: 3rem;
+  margin: calc(5vh - 1.5rem) 0;
+}
+
+.q {
+  display: none;
 }

@@ -1,14 +1,17 @@
 $(function() {
 
   setTimeout(function() {
+    $('#welcome').fadeIn('slow');
+  }, 2000);
 
-      $('#stand-by').fadeOut('fast');
-
-      $('#main-lower').fadeIn(1500).animate({
-        height: '40%',
-        'border-color': '#fff'
-      }, 1500);
-
-    }, 2000);
-
+  setTimeout(function() {
+    $('#q-wrapper').animate({
+      top: '90%'
+    }, 'slow');
+  }, 3000).scrollTop();
+/*
+  $('.fa-chevron-down').click(function() {
+    $(this).scrollTop('90%');
   });
+*/
+});
