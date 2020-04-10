@@ -7,8 +7,49 @@ html {
   font-size: 1em;
 }
 
-body {
+main {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100vh;
+  color: #fff;
+  text-align: center;
   background-image: url('../image/IMG_20200209_195455.jpg');
   background-size: cover;
+}
+
+#main-upper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 30%;
+}
+
+#main-upper h1 {
+  font-size: 5rem;
+}
+
+#main-upper p {
+  font-size: 2rem;
+}
+
+#stand-by {
+  position: absolute;
+  bottom: 10vh;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#main-lower {
+  width: 80%;
+  height: 0;  /* to 40% */
+  border: solid rgba(255, 255, 255, 0);  /* to #fff */
 }
