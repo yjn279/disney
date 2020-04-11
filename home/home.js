@@ -1,17 +1,23 @@
 $(function() {
 
-  setTimeout(function() {
-    $('#welcome').fadeIn('slow');
-  }, 2000);
 
   setTimeout(function() {
-    $('#q-wrapper').animate({
-      top: '90%'
+
+    $.when(
+      $('#welcome').fadeIn('slow')
+    ).done(function() {
+      $('#scroll1').fadeIn('slow');
+    });
+
+  }, 2000);
+
+
+  $('#scroll1').click(function() {
+    $('html, body').animate({
+      // scrollTop: $('#q-wrapper').offset().top
+      scrollTop: '750vh'  // なぜ770vh？
     }, 'slow');
-  }, 3000).scrollTop();
-/*
-  $('.fa-chevron-down').click(function() {
-    $(this).scrollTop('90%');
   });
-*/
+
+
 });

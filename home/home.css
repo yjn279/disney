@@ -7,6 +7,12 @@
 html {
   font-size: 1em;
   font-family: serif;
+  text-align: center;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
 }
 
 a {
@@ -15,26 +21,23 @@ a {
 }
 
 #bg-image {
-  z-index: -1;
   position: fixed;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   background-image: url('../image/IMG_20200209_195455.jpg');
   background-size: cover;
 }
 
-main {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
 #welcome {
-  display: none;
+  display: none;  /* to block */
   position: absolute;
   bottom: 50%;
   width: 100%;
   color: #fff;
+  background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #welcome h1 {
@@ -45,22 +48,65 @@ main {
   font-size: 1.8rem;
 }
 
+#scroll1 {
+  display: none;
+  position: absolute;
+  top: 90vh;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #fff;
+  margin: calc(5vh - 1.5rem);
+}
+
 #q-wrapper {
   position: absolute;
   top: 100%;
   width: 80%;
-  height: 1000vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  height: 200vh;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1rem;
   margin: 0 10vw 10vh 10vw;
 }
 
-.fa-chevron-down {
-  position: relative;
-  font-size: 3rem;
-  margin: calc(5vh - 1.5rem) 0;
+.q {
+  position: relative;  /* 子要素のposition指定用 */
+  height: 90vh;
+  margin: 5vh 5vw;
 }
 
-.q {
-  display: none;
+.q h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.q ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  -ms-align-items: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.q .fa-chevron-down {
+  position: absolute;
+  top: 85vh;  /* height:90vh - margin:5vh */
+  cursor: pointer;
+  font-size: 3rem;
+  color: #000;
+  margin: calc(5vh - 1.5rem);
+}
+
+/* q-wrapperの上をあけるため */
+#q1 {
+  height: 85vh;
+}
+
+#q1 .fa-chevron-down {
+  top: 80vh;  /* height:85vh - margin:5vh */
 }
