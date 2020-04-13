@@ -24,8 +24,9 @@ a {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url('../image/E9EF85F292CB45EB86EC7700F4024135_L0.jpg');
+  /* background-image: url('../image/E9EF85F292CB45EB86EC7700F4024135_L0.jpg'); */
   background-size: cover;
+  background-color: rgba(230, 230, 230, 1);
 }
 
 #bg-color {
@@ -73,7 +74,6 @@ a {
   position: absolute;
   top: 100vh;
   width: 80vw;
-  height: 1000vh;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
   margin: 5vh 10vw 10vh 10vw;
@@ -81,26 +81,23 @@ a {
 
 .q {
   position: relative;
-  top: 0;
-  width: 80vw;
-  height: 100vh;
-  /* border: solid; */
-}
-
-.q-container {
-  position: relative;  /* 子要素のposition指定用 */
   width: 70vw;
   height: 90vh;
-  /* border: solid red; */
-  margin: 5vh 5vw;
+  margin: 10vh 5vw
 }
 
-.q-container h2 {
+/* q-wrapperの上をあけるため */
+#q-top {
+  height: calc(90vh - 5vh);
+  margin-top: 5vh;
+}
+
+.q h2 {
   font-size: 2rem;
   text-align: left;
 }
 
-.q-container h2::after {
+.q h2::after {
   content: '';
   display: block;
   width: 70vw;
@@ -108,29 +105,14 @@ a {
   background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
   -webkit-background-clip: block;
   -webkit-block-fill-color: transparent;
-
 }
 
-.q-container ul {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
+.q div {
   position: absolute;
   top: 0;
   width: 70vw;
   height: 90vh;
-  justify-content: space-evenly;
   -ms-align-items: center;
   align-items: center;
   font-size: 1.2rem;
-}
-
-/* q-wrapperの上をあけるため */
-#q1 {
-  height: calc(100vh - 5vh);
-  /* background-color: blue; */
-}
-
-#q1 .q-container {
-  height: calc(90vh - 5vh);
 }

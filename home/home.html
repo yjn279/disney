@@ -5,6 +5,12 @@
   <title>home</title>
   <!-- CSS -->
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="q1.css">
+    <link rel="stylesheet" href="q2.css">
+    <link rel="stylesheet" href="q3.css">
+    <link rel="stylesheet" href="q4.css">
+    <link rel="stylesheet" href="q5.css">
+    <link rel="stylesheet" href="q6.css">
   <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- jQuery Color -->
@@ -20,14 +26,8 @@
     <main>
       <div id="welcome">
         <h1>
-          <span>
-            <span>Welcome</span>
-            <span>to</span>
-          </span>
-          <span>
-            <span>Disney</span>
-            <span>Navi.</span>
-          </span>
+          <span>Welcome to</span>
+          <span>Disney Navi.</span>
         </h1>
         <p>
           <span>最高の</span
@@ -37,39 +37,36 @@
       </div>
       <span class="fas fa-chevron-down scroll" id="scroll0"></span>
       <div id="q-wrapper">
-        <div class="q" id="q1">
-          <div class="q-container">
-            <h2>Q1. 質問</h2>
-            <ul>
-              <li>a</li>
-              <li>b</li>
-              <li>c</li>
-            </ul>
-            <span class="fas fa-chevron-down scroll"></span>
-          </div>
+        <div class="q" id="q-top">
+          <h2>Q1.&ensp;行きたいパークを選んでください。</h2>
+          <div id="q1"></div>
+          <span class="fas fa-chevron-down scroll"></span>
         </div>
         <div class="q">
-          <div class="q-container">
-            <h2>Q1. 行きたいパークを教えてください。</h2>
-            <ul>
-              <li>東京ディズニーランド</li>
-              <li>東京ディズニーシー</li>
-              <li>これから決める</li>
-            </ul>
-            <span class="fas fa-chevron-down scroll"></span>
-          </div>
+          <h2>Q2.&ensp;パークに行く日を選んでください。</h2>
+          <div id="q2"></div>
+          <span class="fas fa-chevron-down scroll"></span>
         </div>
         <div class="q">
-          <div class="q-container">
-            <h2>Q1. 行きたいパークを教えてください。</h2>
-            <ul>
-              <li>東京ディズニーランド</li>
-              <li>東京ディズニーシー</li>
-              <li>これから決める</li>
-            </ul>
-            <span class="fas fa-chevron-down scroll"></span>
-          </div>
-          </div>
+          <h2>Q3.&ensp;乗りたいアトラクションを選んでください。</h2>
+          <div id="q3"></div>
+          <span class="fas fa-chevron-down scroll"></span>
+        </div>
+        <div class="q">
+          <h2>Q4.&ensp;理想のパークの回り方を選んでください。</h2>
+          <div id="q4"></div>
+          <span class="fas fa-chevron-down scroll"></span>
+        </div>
+        <div class="q">
+          <h2>Q5.&ensp;ご本人様とお連れ様のお名前を入力してください。</h2>
+          <div id="q5"></div>
+          <span class="fas fa-chevron-down scroll"></span>
+        </div>
+        <div class="q">
+          <h2>Q6.&ensp;メールアドレスを入力してください。</h2>
+          <div id="q6"></div>
+          <span class="fas fa-chevron-down scroll"></span>
+        </div>
       </div>
     </main>
     <script src="home.js"></script>
