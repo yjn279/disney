@@ -5,25 +5,17 @@ $(function() {
 
     $('#bg-color').fadeIn('slow');
     $('#welcome').fadeIn('slow');
-    $('#scroll1').fadeIn('slow');
+    $('#scroll0').fadeIn('slow');
 
   }, 2000);
 
 
-  $('#scroll1').click(function() {
-
-    $('html, body').animate({
-      scrollTop: $(this).offset().top + $(this).height()
-      // scrollTop: '750vh'  // なぜ770vh？
-    }, 'slow', 'easeOutQuart');
-
-  });
-
-
   $('.scroll').click(function() {
 
+    var scrollPosition = $(this).offset().top + $(this).height() + $(window).height() * 0.05;
+
     $('html, body').animate({
-      scrollTop: $(this).offset().top + $(this).outerHeight(true)
+      scrollTop: scrollPosition
     }, 'slow', 'easeOutQuart');
 
   });
