@@ -1,13 +1,13 @@
-#q4 ul {
-  position: absolute;
-  top: 0;
-  width: 70vw;
-  height: 90vh;
+#q4 div {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-evenly;
-  -ms-align-items: center;
-  align-items: center;
-  font-size: 1.2rem;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+#q4 label {
+  cursor: pointer;
+  text-align: left;
 }
