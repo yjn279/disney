@@ -1,13 +1,93 @@
-ul {
-  position: absolute;
-  top: 0;
-  width: 70vw;
-  height: 90vh;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-evenly;
-  -ms-align-items: center;
-  align-items: center;
-  font-size: 1.2rem;
+#q3-wrapper {
+  display: block;
+}
+
+#q3-wrapper h2 {
+  position: relative;
+}
+
+#q3 {
+  position: relative;
+  top: 3vh;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: left;
+}
+
+.q3-container {
+  width: 22vw;
+}
+
+.theme {
+  border: solid 2px;
+  border-radius: 1rem;
+  margin: 2vh 0;
+}
+
+.theme h3 {
+  color: #fff;
+  text-align: center;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.theme label {
+  display: block;
+  cursor: pointer;
+  padding: 0 1.5rem;
+}
+
+.wb {
+  border-color: #FF7F7F;
+}
+
+.wb h3 {
+  background-color: #FF7F7F;
+}
+
+.al {
+  border-color: #8FE572;
+}
+
+.al h3 {
+  background-color: #8FE572;
+}
+
+.wl {
+  border-color: #FFA77F;
+}
+
+.wl h3 {
+  background-color: #FFA77F;
+}
+
+.cc {
+  border-color: #7FDAFF;
+}
+
+.cc h3 {
+  background-color: #7FDAFF;
+}
+
+.fl {
+  border-color: #FF7FF4;
+}
+
+.fl h3 {
+  background-color: #FF7FF4;
+}
+
+.tt {
+  border-color: #FFC77F;
+}
+
+.tt h3 {
+  background-color: #FFC77F;
+}
+
+.tl {
+  border-color: #7FC3FF;
+}
+
+.tl h3 {
+  background-color: #7FC3FF;
 }

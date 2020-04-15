@@ -91,9 +91,15 @@ a {
 }
 
 .q {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
   position: relative;
   width: 70vw;
   height: 90vh;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
   margin: 10vh 5vw
 }
 
@@ -104,6 +110,8 @@ a {
 }
 
 .q h2 {
+  position: absolute;
+  top: 0;
   font-size: 2rem;
   text-align: left;
 }
@@ -122,12 +130,8 @@ a {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  position: absolute;
-  top: 0;
   width: 70vw;
-  height: 90vh;
   justify-content: center;
   -ms-align-items: center;
   align-items: center;
-  font-size: 1.2rem;
 }
