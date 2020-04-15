@@ -10,7 +10,7 @@ $(function() {
 
   setTimeout(function() {
 
-    $('#bg-color').fadeIn('slow');
+    // $('#bg-color').fadeIn('slow');
     $('#welcome').fadeIn('slow');
     // $('#welcome').css('display', 'inline-block');
     $('#scroll0').fadeIn('slow');

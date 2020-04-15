@@ -1,13 +1,35 @@
-ul {
-  position: absolute;
-  top: 0;
-  width: 70vw;
-  height: 90vh;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-evenly;
-  -ms-align-items: center;
-  align-items: center;
-  font-size: 1.2rem;
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#q2 section {
+    margin: 10px;
+}
+
+#q2 h1 {
+    font-size: 18px;
+}
+
+#q2 table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#q2 td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+#q2 td:first-child {
+    color: red;
+}
+
+#q2 td:last-child {
+    color: royalblue;
+}
+
+#q2 td.is-disabled {
+    color: #ccc;
 }

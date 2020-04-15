@@ -1,13 +1,20 @@
-ul {
-  position: absolute;
+#q1 .btn {
+  display: inline-block;
   top: 0;
-  width: 70vw;
-  height: 90vh;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-evenly;
-  -ms-align-items: center;
-  align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  margin: 0 2rem;
+}
+
+#parks-left {
+  background: linear-gradient(to right, #bf7fff, #ff7fbf);
+}
+
+#parks-right {
+  background: linear-gradient(to right, #ff7fbf, #ffbf7f);
+}
+
+#yet {
+  position: relative;
+  top: 10vh;
+  color: grey;
 }
