@@ -27,7 +27,7 @@ a {
   transition: .4s;
   color: #fff;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
+  background: linear-gradient(to right, #7FBFFF, #FF7FFF, #FFBF7F);
   border-radius: 2.4rem;
 }
 
@@ -37,7 +37,7 @@ a {
   height: 100vh;
   /* background-image: url('../image/E9EF85F292CB45EB86EC7700F4024135_L0.jpg'); */
   background-size: cover;
-  background-color: rgba(245, 245, 245, 1);
+  background-color: #fff;
 }
 
 #bg-color {
@@ -53,7 +53,7 @@ a {
   position: absolute;
   bottom: 50vh;
   width: 100%;
-  background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
+  background: linear-gradient(to right, #7FBFFF, #FF7FFF, #FFBF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -71,7 +71,7 @@ a {
   bottom: 0;
   cursor: pointer;
   font-size: 3rem;
-  background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
+  background: linear-gradient(to right, #7FBFFF, #FF7FFF, #FFBF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,7 +121,7 @@ a {
   display: block;
   width: 70vw;
   height: 2px;
-  background: linear-gradient(to right, #bf7fff, #ff7fbf, #ffbf7f);
+  background: linear-gradient(to right, #7FBFFF, #FF7FFF, #FFBF7F);
   -webkit-background-clip: block;
   -webkit-block-fill-color: transparent;
 }

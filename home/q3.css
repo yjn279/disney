@@ -19,15 +19,13 @@
 }
 
 .theme {
-  border: solid 2px;
-  border-radius: 1rem;
+  border-radius: 0.5vmax;
   margin: 2vh 0;
 }
 
 .theme h3 {
-  color: #fff;
   text-align: center;
-  border-radius: 0.8rem 0.8rem 0 0;
+  border-bottom: solid 1.5px;
 }
 
 .theme label {
@@ -36,58 +34,83 @@
   padding: 0 1.5rem;
 }
 
-.wb {
+.theme label {
+  position: relative;
+}
+
+.theme label::before {
+  content: '';
+  position: absolute;
+  top: calc(1rem * 0.25 + 2px);
+  left: calc(0.5rem);  /* (1.5rem - 0.5rem) / 2 */
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid 1.5px silver;
+  border-radius: 0.1vmax;
+}
+
+.theme input {
+  display: none;
+}
+
+.theme input:checked {
+  display: block;
+  /* + で接続できない */
+  /* checkboxのborderを灰色 → checkedで色をつける？ */
+}
+
+.wb, .wb label::before {
   border-color: #FF7F7F;
 }
 
 .wb h3 {
-  background-color: #FF7F7F;
+  color: #FF7F7F;
 }
 
-.al {
+.al, .al label::before {
   border-color: #8FE572;
 }
 
 .al h3 {
-  background-color: #8FE572;
+  color: #8FE572;
 }
 
-.wl {
+.wl, .wl label::before {
   border-color: #FFA77F;
 }
 
 .wl h3 {
-  background-color: #FFA77F;
+  color: #FFA77F;
 }
 
-.cc {
+.cc, .cc label::before {
   border-color: #7FDAFF;
 }
 
 .cc h3 {
-  background-color: #7FDAFF;
+  color: #7FDAFF;
 }
 
-.fl {
+.fl, .fl label::before {
   border-color: #FF7FF4;
 }
 
 .fl h3 {
-  background-color: #FF7FF4;
+  color: #FF7FF4;
 }
 
-.tt {
+.tt, .tt label::before {
   border-color: #FFC77F;
 }
 
 .tt h3 {
-  background-color: #FFC77F;
+  color: #FFC77F;
 }
 
-.tl {
+.tl, .tl label::before {
   border-color: #7FC3FF;
 }
 
 .tl h3 {
-  background-color: #7FC3FF;
+  color: #7FC3FF;
 }
