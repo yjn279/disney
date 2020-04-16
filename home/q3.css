@@ -26,16 +26,14 @@
 .theme h3 {
   text-align: center;
   border-bottom: solid 1.5px;
+  margin-bottom: 0.8rem;
 }
 
 .theme label {
   display: block;
+  position: relative;
   cursor: pointer;
   padding: 0 1.5rem;
-}
-
-.theme label {
-  position: relative;
 }
 
 .theme label::before {

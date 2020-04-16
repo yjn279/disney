@@ -1,3 +1,9 @@
+#q4 {
+  justify-content: space-evenly;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
 #q4 div {
   display: -webkit-flex;
   display: -ms-flex;
@@ -5,9 +11,60 @@
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
+  margin-bottom: 2rem;
+}
+
+#q4 h3::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  -webkit-background-clip: block;
+  -webkit-block-fill-color: transparent;
+  margin-bottom: 0.8rem;
+}
+
+.q4-left h3::after {
+  background: linear-gradient(to right, #7FBFFF, #FF7FFF);
+}
+
+.q4-right   h3::after {
+  background: linear-gradient(to right, #FF7FFF, #FFBF7F);
 }
 
 #q4 label {
+  position: relative;
   cursor: pointer;
   text-align: left;
+  padding: 0 1.5rem;
+}
+
+#q4 label::before {
+  content: '';
+  position: absolute;
+  top: calc(1rem * 0.25 + 2px);
+  left: calc(0.5rem);  /* (1.5rem - 0.5rem) / 2 */
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid 1.5px;
+}
+
+#q4 .q4-right label::before {
+  border-color: #FF7FFF;
+  border-radius: 0.1vmax;
+}
+
+#q4 .q4-left label::before {
+  border-color: #7FBFFF;
+  border-radius: 10vmax;
+}
+
+#q4 input {
+  display: none;
+}
+
+#q4 input:checked {
+  display: block;
+  /* + で接続できない */
+  /* checkboxのborderを灰色 → checkedで色をつける？ */
 }
